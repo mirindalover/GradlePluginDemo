@@ -5,11 +5,15 @@ buildscript {
     repositories {
         google()
         jcenter()
+
+        maven{
+            url uri('D:/repos')//add local maven
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
         
-
+        classpath 'com.mlc.plugin:simple:1.0.0' //simple is module's name
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

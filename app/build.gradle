@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'com.mlc.plugin.log' //used plugin properties's name
+
 android {
     compileSdkVersion 28
     defaultConfig {

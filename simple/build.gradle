@@ -1,0 +1,26 @@
+apply plugin: 'groovy'
+
+apply plugin: 'maven'//used add to maven
+
+dependencies{
+    compile gradleApi()
+
+    compile localGroovy()
+}
+
+group = 'com.mlc.plugin'//used by classpath
+
+version = '1.0.0'
+
+uploadArchives{
+
+    repositories{
+
+        mavenDeployer{
+            //local maven
+            repository(url: uri('D:/repos'))
+        }
+    }
+}
+
+
