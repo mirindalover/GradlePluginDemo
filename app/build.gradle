@@ -1,6 +1,16 @@
 apply plugin: 'com.android.application'
 
-apply plugin: 'com.mlc.plugin.log' //used plugin properties's name
+//used plugin properties's file name
+apply plugin: 'com.mlc.plugin.log'
+
+apply plugin: 'com.mlc.plugin.task'
+
+person{
+
+    name 'mlc'
+
+    age 18
+}
 
 android {
     compileSdkVersion 28
