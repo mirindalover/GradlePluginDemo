@@ -18,7 +18,7 @@ uploadArchives{
 
         mavenDeployer{
             //local maven
-            repository(url: uri('D:/repos'))
+            repository(url: uri('D:/GitMaven'))
         }
     }
 }

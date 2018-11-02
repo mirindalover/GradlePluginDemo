@@ -6,8 +6,12 @@ buildscript {
         google()
         jcenter()
 
+//        maven{
+//            url uri('D:/GitMaven')//add local maven
+//        }
+
         maven{
-            url uri('D:/repos')//add local maven
+            url 'https://raw.githubusercontent.com/mirindalover/GitMaven/master'
         }
     }
     dependencies {
