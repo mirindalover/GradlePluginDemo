@@ -20,6 +20,14 @@ uploadArchives{
             //local maven
             repository(url: uri('D:/GitMaven'))
         }
+
+//        // library的包名
+//        pom.groupId = publishedGroupId
+//        // library的项目名
+//        pom.artifactId = artifact
+//        // library的版本号
+//        pom.version = libraryVersion
+        //最终文件在 groupId/artifactId
     }
 }
 

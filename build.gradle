@@ -11,6 +11,7 @@ buildscript {
 //        }
 
         maven{
+            //使用github的查看raw(原始文件)，即可获得该地址
             url 'https://raw.githubusercontent.com/mirindalover/GitMaven/master'
         }
     }
