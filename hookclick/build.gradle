@@ -2,23 +2,31 @@ apply plugin: 'groovy'
 
 apply plugin: 'maven'//used add to maven
 
-dependencies{
-    compile gradleApi()
+dependencies {
+    implementation gradleApi()
 
-    compile localGroovy()
+    implementation localGroovy()
 
-    compileOnly "com.android.tools.build:gradle:3.1.2"
+    //gradle源码、Transform
+    compileOnly 'com.android.tools.build:gradle:3.1.2', {
+        exclude group: 'org.ow2.asm'
+    }
+
+    //ASM
+    implementation 'org.ow2.asm:asm:6.0'
+    implementation 'org.ow2.asm:asm-util:6.0'
+    implementation 'org.ow2.asm:asm-commons:6.0'
 }
 
 group = 'com.mlc.plugin'//used by classpath
 
 version = '1.0.0'
 
-uploadArchives{
+uploadArchives {
 
-    repositories{
+    repositories {
 
-        mavenDeployer{
+        mavenDeployer {
             //local maven
             repository(url: uri('D:/GitMaven'))
         }
